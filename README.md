@@ -13,5 +13,5 @@
 
 ## Demo :
 
-for see the project online [click here](https://github.com/mohammad-noohi/simple-users-cms/tree/master)
+for see the project online [click here](https://mohammad-noohi.github.io/simple-users-cms/)
 
