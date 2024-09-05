@@ -1,0 +1,11 @@
+/* Global Variables */
+:root {
+  --bg-blue: rgb(34, 99, 220);
+  --bg-blue-hover: rgb(30, 86, 191);
+  --bg-orange: rgb(255, 149, 0);
+  --bg-orange-hover: rgb(221, 130, 3);
+  --bg-green: rgb(20, 183, 20);
+  --bg-green-hover: rgb(19, 164, 19);
+  --bg-red: rgb(245, 59, 59);
+  --bg-red-hover: rgb(206, 51, 51);
+}

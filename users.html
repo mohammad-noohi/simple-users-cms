@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>users</title>
+    <!-- users.css file -->
+    <link rel="stylesheet" href="./src/css/users.css" />
+  </head>
+  <body>
+    <header class="header">
+      <button class="back-history">register</button>
+    </header>
+    <main class="main">
+      <section class="users-section">
+        <div class="container">
+          <div class="users-section__content">
+            <h1 class="section__title">users CMS</h1>
+            <div class="users">
+              <!-- start user -->
+              <!-- <div class="user">
+                <div class="user__pic">
+                  <img src="./src/images/img_avatar2.png" alt="" />
+                </div>
+                <div class="user__info">
+                  <h3 class="user__name">mohammad noohi</h3>
+                  <h5 class="user__pass">pass : <span class="user__pass-value">12345</span></h5>
+                </div>
+                <div class="user__actions">
+                  <div class="user__edit-btn">edit</div>
+                  <div class="user__delete-btn">delete</div>
+                </div>
+              </div> -->
+              <!-- finish user -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- delete user modal -->
+    <div class="modal modal--delete-user">
+      <div class="modal-content">
+        <div class="close-modal-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h3 class="modal__title">are you sure you want delete this user ?</h3>
+        <div class="modal-actions">
+          <div class="confirm-btn">yes</div>
+          <div class="cancel-btn">cancel</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit user modal -->
+    <div class="modal modal--edit-user">
+      <div class="modal-content">
+        <div class="close-modal-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </div>
+        <h3 class="modal__title">edit your user data</h3>
+        <form action="" class="edit-user-form">
+          <input class="firstname-input-edit" type="text" name="" placeholder="firstname" />
+          <input class="lastname-input-edit" type="text" name="" placeholder="lastname" />
+          <input class="password-input-edit" type="password" name="" placeholder="password" />
+          <div class="modal-actions">
+            <div class="confirm-btn">confirm</div>
+            <div class="cancel-btn">cancel</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+      <!-- lotti file -->
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+      <dotlottie-player src="https://lottie.host/b809e17c-3485-413c-8de6-620643bd210f/4Xjg2JMysZ.json" background="transparent" speed="2" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+    </div>
+    <!-- sweetalert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- users.js file -->
+    <script src="./src/js/users.js"></script>
+  </body>
+</html>

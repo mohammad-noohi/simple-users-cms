@@ -1,0 +1,172 @@
+/* Global Variables */
+@import url(variables.css);
+
+/* Reset CSS */
+@import url(reset.css);
+
+h1 {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 200ms linear;
+}
+
+.register-btn {
+  background-color: var(--bg-blue);
+}
+
+.register-btn:hover,
+.register-btn:active {
+  background-color: var(--bg-blue-hover);
+}
+
+.users-btn {
+  background-color: var(--bg-orange);
+}
+
+.users-btn:hover,
+.users-btn:active {
+  background-color: var(--bg-orange-hover);
+}
+
+/* Register Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  flex-basis: 45rem;
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.modal-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.modal-pic img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.register-form label {
+  font-weight: 600;
+}
+
+.register-form input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  border-radius: 0.8rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--bg-blue);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--bg-blue-hover);
+}
+
+.close-modal-btn {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.close-modal-btn:hover {
+  color: red;
+}
+
+/* show modal */
+.modal.active {
+  display: flex;
+}
+
+.modal.active .modal-content {
+  animation: zoomIn 1s 200ms both;
+}
+
+/* hide modal content with animation */
+.modal.hide .modal-content {
+  animation: zoomOut 1s 200ms both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.loader {
+  position: fixed;
+  background-color: #fff;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}

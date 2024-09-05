@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- index.css file -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1>this is home page</h1>
+        <div class="buttons">
+          <a class="register-btn">register</a>
+          <a href="users.html" class="users-btn">users page</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Register Modal -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-pic">
+          <img src="./src/images/img_avatar2.png" alt="modal avatar" />
+        </div>
+        <form action="" class="register-form">
+          <div class="input-group">
+            <label for="firstname-input">firstname</label>
+            <input type="text" name="firstname" class="firstname-input" id="firstname-input" />
+          </div>
+          <div class="input-group">
+            <label for="lastname-input">lastname</label>
+            <input type="text" name="lastname" class="lastname-input" id="lastname-input" />
+          </div>
+          <div class="input-group">
+            <label for="password-input">password</label>
+            <input type="text" name="password" class="password-input" id="password-input" />
+          </div>
+          <button class="submit-btn" type="submit">register</button>
+
+          <div class="close-modal-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+      <!-- lotti file -->
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+      <dotlottie-player src="https://lottie.host/b809e17c-3485-413c-8de6-620643bd210f/4Xjg2JMysZ.json" background="transparent" speed="2" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+    </div>
+
+    <!-- sweetalert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- index.js file -->
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
